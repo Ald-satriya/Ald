@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.css" >
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-callout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.6.5/css/buttons.dataTables.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--
+    Images are from https://unsplash.com/
+    -->
+
+
+</head>
+<body>
+    <nav id="scrolling_navbar" class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">Me Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav fw-bold">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#table">Tabel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div data-bs-spy="scroll" data-bs-target="#scrolling_navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
+
+        <section class="min-vh-100 d-flex flex-wrap align-content-center" id="home" style="background-image: url('image/home.jpg'); background-size: cover;">
+          <div class="container d-flex align-items-center py-5">
+              <div class="col text-center bg-light m-4 p-4 text-dark bg-opacity-50 rounded-5 border border-2 border-white">
+                <img src="image/Png.png" class="img-fluid col-lg-2 col-sm-6 col-xs-6 mb-4"> 
+                <p class="display-2 text-secondary mb-3">Personal Portfolio</p>
+                <p class="text-secondary fs-5 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus lectus, dapibus a erat quis, venenatis feugiat nulla. Phasellus sit amet ante sapien.</p>
+                <a class="btn btn-success btn-lg active rounded-pill mb-3" href="#about">About</a>
+                <a class="btn btn-light btn-lg rounded-pill mb-3" href="#contact">Contact</a>
+            </div>
+          </div>
+        </section>
+
+        <section data-bs-spy="scroll" data-bs-target="#scrolling_navbar" class="container py-5" id="about">
+            <div class="text-center py-5">
+                <h2 class="fw-bolder">About</h2>
+                <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4" >
+                    <img class="img-fluid rounded-5" src="image/ald.jpg">
+                </div>
+                <div class="col-lg-7 offset-lg-1">
+                    <p class="lh-lg mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, molestiae commodi? Cum ullam voluptatum fuga modi? Quos possimus corrupti quisquam? Ratione, hic repellat distinctio iste at cumque ad harum architecto odio rem excepturi itaque minima praesentium quibusdam dolorum perferendis voluptas!</p>
+                    <h3 class="fw-bold fs-4">Skills</h3>
+                    
+                    <p class="mb-0" >HTML:</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar progress-bar-striped bg-greenyellow" style="width: 99%;">99%</div>
+                    </div>
+                    <p class="mb-0" >CSS:</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar progress-bar-striped bg-info" style="width: 99%;">99%</div>
+                    </div>
+                    <p class="mb-0" >JS:</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar progress-bar-striped bg-warning" style="width: 99%;">99%</div>
+                    </div>
+                    <p class="mb-0" >BOOTSTRAP 5:</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar progress-bar-striped bg-danger" style="width: 99%;">99%</div>
+                    </div>
+                    <p class="mb-0" >REACT:</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar progress-bar-striped bg-green" style="width: 99%;">99%</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section data-bs-spy="scroll" data-bs-target="#scrolling_navbar" class="bg-dark py-5" id="Portfolio">
+            <div class="container">
+                <div class="text-white text-center py-5">
+                    <h2 class="fw-bolder">Portfolio</h2>
+                    <p class="fs-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, necessitatibus.</p>
+                </div>
+
+                <div class="row pb-4" id="gallery" data-toggle="modal" data-target="#exampleModal">
+                    <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                      <img class="w-100 img-thumbnail" src="image/photo-1.jpg" data-target="#carouselExample" data-slide-to="0">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                      <img class="w-100 img-thumbnail" src="image/photo-2.jpg" data-target="#carouselExample" data-slide-to="1">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                      <img class="w-100 img-thumbnail" src="image/photo-3.jpg" data-target="#carouselExample" data-slide-to="2">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                      <img class="w-100 img-thumbnail" src="image/photo-4.jpg" data-target="#carouselExample" data-slide-to="3">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                        <img class="w-100 img-thumbnail" src="image/photo-5.jpg" data-target="#carouselExample" data-slide-to="4">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                        <img class="w-100 img-thumbnail" src="image/photo-6.jpg" data-target="#carouselExample" data-slide-to="5">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                        <img class="w-100 img-thumbnail" src="image/photo-7.jpg" data-target="#carouselExample" data-slide-to="6">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                        <img class="w-100 img-thumbnail" src="image/photo-8.jpg" data-target="#carouselExample" data-slide-to="7">
+                    </div>
+                  </div>
+                  
+                  <!-- Modal -->
+                  <!-- 
+                  This part is straight out of Bootstrap docs. Just a carousel inside a modal.
+                  -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                              </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" data-bs-interval="3000">
+                                <img class="d-block w-100" src="image/photo-1.jpg">
+                              </div>
+                              <div class="carousel-item" data-bs-interval="3000">
+                                <img class="d-block w-100" src="image/photo-2.jpg">
+                              </div>
+                              <div class="carousel-item" data-bs-interval="3000">
+                                <img class="d-block w-100" src="image/photo-3.jpg">
+                              </div>
+                              <div class="carousel-item" data-bs-interval="3000">
+                                <img class="d-block w-100" src="image/photo-4.jpg">
+                              </div>
+                              <div class="carousel-item" data-bs-interval="3000">
+                                <img class="d-block w-100" src="image/photo-5.jpg">
+                              </div>
+                              <div class="carousel-item" data-bs-interval="3000">
+                                <img class="d-block w-100" src="image/photo-6.jpg">
+                              </div>
+                              <div class="carousel-item" data-bs-interval="3000">
+                                <img class="d-block w-100" src="image/photo-7.jpg">
+                              </div>
+                              <div class="carousel-item" data-bs-interval="3000">
+                                <img class="d-block w-100" src="image/photo-8.jpg">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExample" type="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExample" type="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+            </div>
+            
+        </section>
+
+        <section data-bs-spy="scroll" data-bs-target="#scrolling_navbar" class="py-5 jumbotron text-center" id="table">
+          
+            <h2>Top Indonesian Influencers</h2>
+            <table id="example" class="display">
+              <thead>
+                <tr>
+                  <th>Nama Asli</th>
+                  <th>Nama Selebgram</th>
+                  <th>Followers</th>
+                  <th>Username TikTok</th>
+                  <th>Username Instagram</th>
+                  <th>Channel YouTube</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tbody>
+                  <tr>
+                    <td>Midori Eidelweis Putri Rinjani</td>
+                    <td>Eidelweis</td>
+                    <td>100M+</td>
+                    <td>@Eidelweis</td>
+                    <td>@Eidelweisloafs</td>
+                    <td>Eidelweis_Official</td>
+                </tr>
+                  <tr>
+                      <td>Raffi Ahmad</td>
+                      <td>Raffi Ahmad</td>
+                      <td>60M+</td>
+                      <td>@raffinagita1717</td>
+                      <td>@raffinagita1717</td>
+                      <td>RANS Entertainment</td>
+                  </tr>
+                  <tr>
+                      <td>Ria Ricis</td>
+                      <td>Ria Ricis</td>
+                      <td>30M+</td>
+                      <td>@riaricis</td>
+                      <td>@riaricis1795</td>
+                      <td>Ricis Official</td>
+                  </tr>
+                  <tr>
+                      <td>Nagita Slavina</td>
+                      <td>Nagita Slavina</td>
+                      <td>30M+</td>
+                      <td>@nagitaslavina</td>
+                      <td>@nagitaslavina</td>
+                      <td>RANS Entertainment</td>
+                  </tr>
+                  <tr>
+                      <td>Gisella Anastasia</td>
+                      <td>Gisel</td>
+                      <td>30M+</td>
+                      <td>@gisel_la</td>
+                      <td>@gisel_la</td>
+                      <td>Gisella Anastasia</td>
+                  </tr>
+                  <tr>
+                      <td>Prilly Latuconsina</td>
+                      <td>Prilly Latuconsina</td>
+                      <td>10M+</td>
+                      <td>@prillylatuconsina</td>
+                      <td>@prillylatuconsina</td>
+                      <td>Prilly Latuconsina</td>
+                  </tr>
+                  <tr>
+                      <td>Awkarin</td>
+                      <td>Aurora</td>
+                      <td>7M+</td>
+                      <td>@awkarin</td>
+                      <td>@awkarin</td>
+                      <td>Aurora Official</td>
+                  </tr>
+                  <tr>
+                      <td>Felicya Angelista</td>
+                      <td>Felicya Angelista</td>
+                      <td>7M+</td>
+                      <td>@felicyangelista</td>
+                      <td>@felicyangelista</td>
+                      <td>Felicya Angelista</td>
+                  </tr>
+                  <tr>
+                      <td>Rizky Billar</td>
+                      <td>Rizky Billar</td>
+                      <td>9M+</td>
+                      <td>@rizkybillar</td>
+                      <td>@rizkybillar</td>
+                      <td>Rizky Billar</td>
+                  </tr>
+                  <tr>
+                      <td>Jessica Iskandar</td>
+                      <td>Jedar</td>
+                      <td>8M+</td>
+                      <td>@jessicaiskandar</td>
+                      <td>@jessicaiskandar</td>
+                      <td>Jedar Official</td>
+                  </tr>
+                  <tr>
+                      <td>Rachel Vennya</td>
+                      <td>Rachel Vennya</td>
+                      <td>4M+</td>
+                      <td>@rachelvennya</td>
+                      <td>@rachelvennya</td>
+                      <td>Rachel Vennya</td>
+                  </tr>
+                  <tr>
+                      <td>Paula Verhoeven</td>
+                      <td>Paula Verhoeven</td>
+                      <td>4M+</td>
+                      <td>@paulaverhoeven</td>
+                      <td>@paulaverhoeven</td>
+                      <td>Paula Verhoeven</td>
+                  </tr>
+                  <tr>
+                      <td>Dinda Hauw</td>
+                      <td>Dinda Hauw</td>
+                      <td>5M+</td>
+                      <td>@dindahauw</td>
+                      <td>@dindahauw</td>
+                      <td>Dinda Hauw</td>
+                  </tr>
+                  <tr>
+                      <td>Rudy Salim</td>
+                      <td>Rudy Salim</td>
+                      <td>3M+</td>
+                      <td>@rudysalim</td>
+                      <td>@rudysalim</td>
+                      <td>Rudy Salim</td>
+                  </tr>
+                  <tr>
+                      <td>Ayla Dimitri</td>
+                      <td>Ayla Dimitri</td>
+                      <td>3M+</td>
+                      <td>@ayladimitri</td>
+                      <td>@ayladimitri</td>
+                      <td>Ayla Dimitri</td>
+                  </tr>
+                  <tr>
+                      <td>Chika Jessica</td>
+                      <td>Chika Jessica</td>
+                      <td>2M+</td>
+                      <td>@chikajessica</td>
+                      <td>@chikajessica</td>
+                      <td>Chika Jessica</td>
+                  </tr>
+                  <tr>
+                      <td>Teuku Riefky</td>
+                      <td>Teuku Riefky</td>
+                      <td>2M+</td>
+                      <td>@teukuriefky</td>
+                      <td>@teukuriefky</td>
+                      <td>Teuku Riefky</td>
+                  </tr>
+                  <tr>
+                      <td>Gita Savitri</td>
+                      <td>Gita Savitri</td>
+                      <td>1M+</td>
+                      <td>@gitasavitri</td>
+                      <td>@gitasavitri</td>
+                      <td>Gita Savitri</td>
+                  </tr>
+                  <tr>
+                      <td>Putri Tanjung</td>
+                      <td>Putri Tanjung</td>
+                      <td>1M+</td>
+                      <td>@putritanjung</td>
+                      <td>@putritanjung</td>
+                      <td>Putri Tanjung</td>
+                  </tr>
+                  <tr>
+                      <td>Alika Islamadina</td>
+                      <td>Alika Islamadina</td>
+                      <td>1M+</td>
+                      <td>@alikaislamadina</td>
+                      <td>@alikaislamadina</td>
+                      <td>Alika Islamadina</td>
+                  </tr>
+              </tbody>
+            </table>
+          
+        </section>
+
+        <section data-bs-spy="scroll" data-bs-target="#scrolling_navbar" class="bg-dark py-5" id="contact">
+            <div class="container">
+                <div class="text-white text-center py-5">
+                    <h2 class="fw-bolder">Contact</h2>
+                    <p class="fs-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, necessitatibus.</p>
+                </div>
+
+                <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9 col-sm-10 col-11 mx-auto">
+                    <form action="" class="text-white fs-6">
+                        <div class="mb-3">
+                            <label class="form-label text-white">Name Surname</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-white">Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-white">Subject</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-white">Message</label>
+                            <textarea type="text" rows="10" class="form-control"></textarea>
+                        </div>
+                        <div class="d-grid gap-2 col-lg-4 col-md-4 mx-auto">
+                            <button class="btn btn-success btn-lg rounded-pill">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-light">
+            <div class="container">
+                <p class="copyright-text text-center fs-8 py-4 mb-0">Copyright © 2024 <a class="text-dark" href="https://github.com/Ald-satriya" target="_blank">@Ald</a></p>
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+
+    <script>
+        function switchStyle() {
+        if (document.getElementById('styleSwitch').checked) {
+            document.getElementById('gallery').classList.add("custom");
+            document.getElementById('exampleModal').classList.add("custom");
+        } else {
+            document.getElementById('gallery').classList.remove("custom");
+            document.getElementById('exampleModal').classList.remove("custom");
+        }
+        };
+        
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.5/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.print.min.js"></script>
+  
+    <script>
+      $(document).ready(function () {
+        $("#example").DataTable({
+          paging: true,
+          searching: true,
+          ordering: true,
+          pageLength: 5,
+          lengthMenu: [5, 10, 20],
+          columnDefs: [{
+            targets: 2,
+            render: function (data, type, row) {
+              if (type === 'sort') return parseInt(data.replace('M+', '')) * 1000000;
+              return data;
+            }
+          }],
+          dom: 'Bfrtip',
+          buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+        });
+      });
+    </script>
+  
+   
+</body>
+</html>
